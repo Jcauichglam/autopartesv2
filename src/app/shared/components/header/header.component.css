@@ -1,0 +1,19 @@
+.dropdown-menu{
+    left: -150px;
+}
+
+button{
+    background: transparent;
+    border: 0px;
+}
+
+.custom a{
+    font-size: 25px;
+    color: #fff;
+    padding-left: 15px;
+}
+
+button{
+    font-size: 25px;
+    color: #fff;
+}
