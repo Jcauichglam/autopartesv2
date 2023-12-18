@@ -1,5 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #FAFAFA;
+}
+
 .primary-color{
     background: #FF0000;
+}
+
+.color-red{
+    color: #ff0000;
+}
+
+.not-spacing{
+    margin: 0px;
+    padding: 0px;
+}
+
+.text-primary{
+    font-size: 1.5rem;
+}
+
+.shadow_custom_search{
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .09);
 }

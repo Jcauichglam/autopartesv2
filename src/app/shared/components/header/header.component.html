@@ -34,7 +34,7 @@
 
                 <ul class="navbar-nav d-flex flex-row">
                     <!-- Icons -->
-                    <div class="dropdown">
+                    <div class="custom-dropdown dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-user"></i>
@@ -52,20 +52,67 @@
         <!-- Container wrapper -->
     </nav>
 
-    <nav class="navbar navbar-expand-lg navbar-dark primary-color">
-        <div class="container row">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container-fluid row">
             <div class="col-md-4">
-                <a href="www.google.com"><img width="300" src="../../../../assets/img/logo/logo.png" alt=""></a>
+                <a href="www.google.com"><img width="200" src="../../../../assets/img/logo/logo-color.png" alt=""></a>
             </div>
-    
+
             <div class="col-md-4">
-                
+                <div class="">
+                    <ng-autocomplete [data]="data" [searchKeyword]="keyword" placeholder="Encuentra Refacciones y Accesorios"
+                        (selected)='selectEvent($event)' (inputChanged)='onChangeSearch($event)'
+                        (inputFocused)='onFocused($event)' [itemTemplate]="itemTemplate"
+                        [notFoundTemplate]="notFoundTemplate">
+                    </ng-autocomplete>
+
+                    <ng-template #itemTemplate let-item>
+                        <a [innerHTML]="item.name"></a>
+                    </ng-template>
+
+                    <ng-template #notFoundTemplate let-notFound>
+                        <div [innerHTML]="notFound"></div>
+                    </ng-template>
+                </div>
             </div>
-    
-            <div class="col-md-4">
-                3
+
+            <div class="col-md-4 custom-dropdown d-flex flex-row justify-content-end">
+                <button class="button-cart"><i class="fa-solid fa-cart-shopping"></i> Carrito (5)</button>
             </div>
         </div>
     </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex flex-row justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!-- Navbar -->
 </header>
