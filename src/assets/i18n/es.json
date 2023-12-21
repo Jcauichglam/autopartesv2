@@ -1,0 +1,30 @@
+{
+    "welcome": "Bienvenido a la tienda en línea de Autopartes Garage",
+    "language": "Selecciona un idioma",
+    "cart": "Carrito",
+    "category": "Categorías",
+    "recomendations": {
+        "send": "Envío nacional gratis",
+        "content": "en compras desde $499.00 MXN en ciudades participantes",
+        "send_local": "Envío local gratis",
+        "content_local": "en ciudades participantes",
+        "guarante": "30 días de garantía",
+        "content_guarante": "contra defectos de fábrica",
+        "support": "Soporte personalizado",
+        "content_support": "de asesores especializados"
+    },
+    "best_products": "Productos más vendidos",
+    "contact": {
+        "title": "SI, TIENES ALGUNA DUDA CONTACTANOS",
+        "content": "¡Hola AutoPartes Garage! Esta disponible para servirte. Si tienes alguna pregunta o necesitas ayuda en algún tema específico, por favor, indícame en qué puedo ayudarte. Ya sea que estés buscando información sobre auto partes, atención al cliente, o cualquier otro asunto, estaré encantado de asistirte. ¡Adelante con tu consulta!"
+    },
+    "subscribe": "SUSCRÍBASE A NUESTRO BOLETÍN",
+    "buttons": {
+        "contact": "Contactanos",
+        "subscribe": "Suscríbase ahora"
+    },
+    "placeholder": {
+        "search": "Encuentra Refacciones y Accesorios",
+        "email": "Introduzca su dirección de correo electrónico"
+    }
+}

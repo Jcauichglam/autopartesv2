@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LocalstorageService } from '../../services/localstorage.service';
 
 @Component({
   selector: 'app-header',
@@ -22,6 +23,11 @@ export class HeaderComponent {
      }
   ];
 
+  /**
+   *
+   */
+  constructor(private localStorageServices: LocalstorageService) {
+  }
 
   selectEvent(item: any) {
     // do something with selected item
@@ -34,5 +40,10 @@ export class HeaderComponent {
   
   onFocused(e: any){
     // do something when input is focused
+  }
+
+  languaje(language){
+    this.localStorageServices.addStorage('language', language);
+    window.location.reload();
   }
 }

@@ -1,0 +1,31 @@
+{
+    "welcome": "Welcome to Autoparts Garage online store",
+    "language": "Select a language",
+    "cart": "Cart",
+    "category": "Category",
+    "recomendations": {
+        "send": "Free domestic shipping",
+        "content": "on purchases starting at $499.00 MXN in participating cities",
+        "send_local": "Free local shipping",
+        "content_local": "in participating cities",
+        "guarante": "30 days warranty",
+        "content_guarante": "against manufacturing defects",
+        "support": "Customized support",
+        "content_support": "of specialized consultants"
+    },
+    "best_products": "best selling product",
+    "contact": {
+        "title": "IF YOU HAVE ANY QUESTIONS, PLEASE CONTACT US",
+        "content": "Hello AutoPartes Garage! It is available to serve you. If you have any questions or need help on a specific topic, please let me know what I can help you with. Whether you're looking for information on auto parts, customer service, or any other matter, I'll be happy to assist you. Go ahead with your inquiry!"
+    },
+    "subscribe": "SUBSCRIBE TO OUR NEWSLETTER",
+    "buttons": {
+        "contact": "Contact us",
+        "subscribe": "Subscribe now"
+    },
+    "placeholder": {
+        "search": "Find Parts and Accessories",
+        "email": "Enter your email"
+    }
+    
+}

@@ -32,7 +32,16 @@
                 </ul>
                 <!-- Left links -->
 
-                <ul class="navbar-nav d-flex flex-row">
+                <ul class="navbar-nav d-flex flex-row align-items-center">
+                    <div>
+                        <div>
+                            <span class="text-white">{{ 'language' | translate }}</span>
+                        </div>
+                        <div class="d-flex flex-row justify-content-around align-items-center">
+                            <img (click)="languaje('es')" width="40" src="../../../../assets/img/icon/mexico.png" alt="México">
+                            <img (click)="languaje('en')" width="40" src="../../../../assets/img/icon/bandera.png" alt="Estados Unidos">
+                        </div>
+                    </div>
                     <!-- Icons -->
                     <div class="custom-dropdown dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
@@ -60,7 +69,7 @@
 
             <div class="col-md-4">
                 <div class="">
-                    <ng-autocomplete [data]="data" [searchKeyword]="keyword" placeholder="Encuentra Refacciones y Accesorios"
+                    <ng-autocomplete [data]="data" [searchKeyword]="keyword" placeholder="{{ 'placeholder.search' | translate }}"
                         (selected)='selectEvent($event)' (inputChanged)='onChangeSearch($event)'
                         (inputFocused)='onFocused($event)' [itemTemplate]="itemTemplate"
                         [notFoundTemplate]="notFoundTemplate">
@@ -77,7 +86,7 @@
             </div>
 
             <div class="col-md-4 custom-dropdown d-flex flex-row justify-content-end">
-                <button class="button-cart"><i class="fa-solid fa-cart-shopping"></i> Carrito (5)</button>
+                <button class="button-cart"><i class="fa-solid fa-cart-shopping"></i> {{ 'cart' | translate }} (5)</button>
             </div>
         </div>
     </nav>
